@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+      <div class="form-container">
+          <label class="logo"><span>C</span>hatBox</label>
+          <form action='/chatRoom' method='GET'>
+            <div class="field">
+             <span class="fa fa-user"></span>      
+            <input type="text" name="user" placeholder="Your Name"  autocomplete="off"/>
+            </div>
+            <div class="field">
+                <span class="fa fa-home"></span>      
+                <input   list='room' name='room' placeholder="Enter Or Choose Room" autocomplete="off"/>
+                <datalist id='room'>
+                    <option>Javascript</option>
+                    <option>Python</option>
+                    <option>C++</option>
+                    <option>C#</option>
+                </datalist>
+            </div>
+
+           <input type="submit"  value='submit'/>
+          </form>
+      </div>
+    </section>
+</body>
+</html>

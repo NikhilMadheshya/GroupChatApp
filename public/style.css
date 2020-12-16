@@ -1,0 +1,331 @@
+*{
+margin: 0; padding: 0; font-family: sans-serif;
+box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh; width: 100%;
+    display: flex; justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./images/3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .form-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    min-width: 300px;
+}
+.container .form-container .field
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.container .form-container .field .fa{
+    height: 30px;
+    width: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    background:#3a86ff;
+    color:#fff;
+    
+}
+.container .form-container .field  input
+{
+    width:260px; height: 30px;border:none; outline:none;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    background: none;
+    color:#fff;
+    border:1px solid #3a86ff;
+}
+
+.container .form-container .field  input::placeholder
+{
+    color: #fff;
+}
+
+.container .form-container input[type='submit']
+{
+    height: 30px;
+    width: 70px;
+    color:#fff;
+    font-size: 1em;
+    border:none;
+    background:#3a86ff;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.container .form-container .logo
+{
+    color:#fff;
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .form-container .logo span{
+    height: 30px; width: 30px; display: inline-block;
+    background:#3a86ff;
+    margin: 2px;
+    color:#fff;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.room{
+    display: flex;
+    min-width:300px;
+    width: 800px;
+    flex-direction: column;
+    background: rgba(0,0,0,.5);
+}
+
+.room .room--title--bar
+{
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 45px;
+}
+.room .room--title--bar  .logo
+{
+    color:#fff;
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.room .room--title--bar  .logo span{
+    height: 30px; width: 30px; display: inline-block;
+    background:#3a86ff;
+    margin: 2px;
+    color:#fff;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.room .room--title--bar button{
+    height: 30px;
+    width: 70px;
+    color:#fff;
+    font-size: 1em;
+    border:none;
+    background:#3a86ff;
+    cursor: pointer;
+    border-radius: 20px 0 0 20px; 
+    outline: none;
+}
+
+.room .room--title--bar h3{
+    display: flex;
+    align-items: center;
+}
+.room .room--title--bar h3 span{
+    background: #fff;
+    color: #3a86ff;
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 3px;
+}
+.room .room--title--bar h3  label
+{
+    color:#fff;
+    font-size: 1em;
+}
+.room .room--chatbox
+{
+    display: flex;
+    width: 100%;
+    min-height:450px;
+}
+.room .room--chatbox .sidebar
+{
+   
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background: rgba(0,0,0,.5);
+    min-height: 100%;
+    padding:4px;
+}
+.room .room--chatbox .sidebar h3{
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    height: 30px;
+    line-height: 30px;
+    font-size: 1em;
+}
+
+.room .room--chatbox .sidebar h3 span{
+    color: #3a86ff;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.room .room--chatbox .sidebar h2{
+    color:#3a86ff;
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    font-size: 1em;
+    text-align: center;
+}
+.room .room--chatbox .sidebar ul
+{
+    width: 100%; list-style: none;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+}
+.room .room--chatbox .sidebar ul li
+{
+    margin-top: 4px;
+    text-align: center;
+    width: 100%;
+    color:#fff;
+}
+.room .room--footer
+{
+    min-width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+}
+.room .room--footer .inputBox
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.room .room--footer .inputBox input[type='text']
+{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    background: none;
+    border:none;
+    color: #fff;
+    border:1px solid #3a86ff;    
+}
+.room .room--footer .inputBox input[type='text']::placeholder
+{
+    color:#fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.room .room--footer .inputBox button{
+    height: 30px;
+    width: 70px;
+    color:#fff;
+    font-size: 1em;
+    border:none;
+    background:#3a86ff;
+    cursor: pointer;
+    border-radius: 0 20px  20px 0; 
+    outline: none;
+}
+
+.room .room--chatbox .chats
+{
+    min-width:600px;
+    min-height:100%;
+    display: flex;
+    padding: 10px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.room .room--chatbox .chats .send,
+.room .room--chatbox .chats .received
+{
+    display: flex;
+    margin-top: 10px;
+
+}
+.room .room--chatbox .chats .send .message,
+.room .room--chatbox .chats .received .message
+{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding:2px 8px;
+}
+
+.room .room--chatbox .chats .send .message
+{
+    border-radius: 0 10px 10px 10px;
+}
+
+
+.room .room--chatbox .chats  .received .message
+{
+    border-radius: 10px 0 10px 10px;
+}
+.room .room--chatbox .chats  .received
+{
+    justify-content: flex-end;
+}
+.room .room--chatbox .chats .send .message span,
+.room .room--chatbox .chats .received .message span
+{
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.room .room--chatbox .chats .send .message p,
+.room .room--chatbox .chats .received .message p
+{
+    font-size: 0.9em;
+}
+
+.room .room--chatbox .chats .info
+{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.room .room--chatbox .chats .info p{
+    color:#3a86ff;
+    font-size: 0.9em;
+    background:rgba(0,0,0,.5);
+    border-radius: 10px;
+    padding: 2px 4px;
+}

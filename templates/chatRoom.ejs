@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+     integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" 
+     crossorigin="anonymous"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <section class="container">
+     <div class="room">
+         <div class="room--title--bar">
+           <label class="logo"><span>C</span>hatBox</label>
+           <h3 ><span class="fa fa-user"></span><label id='user'></label></h3>
+           <button onclick="leaveRoom()">Leave</button>
+         </div>
+         <div class="room--chatbox">
+          <div class="sidebar">
+            <h3><span class="fa fa-home"></span>RoomName</h3>
+            <h2>Javascript</h2>
+            <h3><span class="fa fa-users"></span>Users</h3>
+            <ul id='users'></ul>
+          </div>
+          <div class="chats">
+          </div>
+         </div>
+         <div class="room--footer">
+             <div class="inputBox">
+                 <input type="text" id='message-input' placeholder="Type Your Message" />
+                 <button type="submit" class="fa fa-send" onclick="sendMessage()"></button>
+             </div>
+         </div>
+     </div>
+    </section>
+</body>
+</html>
